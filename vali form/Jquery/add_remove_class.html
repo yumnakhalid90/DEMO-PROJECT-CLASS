@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        button {
+            padding: 5px 15px;
+            background-color: blue;
+            color: white;
+        }
+  
+        .bg-black {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <body style="text-align: center">
+        <h1 style="color: blue">
+         Add & Remove Class
+        </h1>
+    
+      
+        <div id="IMAGE1">
+            <img src=
+    "car.jpg"
+                height="200px" width="250px" />
+        </div>
+       
+      
+        <br />
+        <button id="addCls">
+            Add CSS Class
+        </button>
+        <button id="removeCls">
+            Remove CSS Class
+        </button>
+      
+        <script>
+            $(document).ready(function () {
+                $("#addCls").click(function () {
+                    $("#IMAGE1").addClass("bg-black");
+                });
+                $("#removeCls").click(function () {
+                    $("#IMAGE1").removeClass("bg-black");
+                });
+            });
+        </script>
+</body>
+</html>
